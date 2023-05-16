@@ -54,7 +54,6 @@ const cardJamie = `
               <ul class="list-unstyled">
                 <li>Arma: ${charactersTemplates[1].weapon}</li>
                 <li>Destreza: ${charactersTemplates[1].skills}</li>
-                <li>Peloteo: X</li>
               </ul>
               <div class="character__actions">
                 <button class="character__action btn">habla</button>
@@ -114,7 +113,7 @@ const cardTyrion = `<li class="character col">
             </div>
             <div class="character__overlay">
               <ul class="list-unstyled">
-                <li>Asesora a: ${charactersTemplates[3].characterAdviced}</li>
+                <li>Asesora a: ${charactersTemplates[3].support}</li>
               </ul>
               <div class="character__actions">
                 <button class="character__action btn">habla</button>
@@ -159,7 +158,7 @@ const cardBron = `<li class="character col">
 template.innerHTML =
   cardJoffrey + cardJamie + cardDaenerys + cardTyrion + cardBron;
 
-/*const registerEventListers = () => {
+const registerEventListers = () => {
   const buttons = document.querySelectorAll(".btn");
   const speakText = document.querySelector(".comunications__text");
 
@@ -171,4 +170,4 @@ template.innerHTML =
   });
 };
 
-registerEventListers();*/
+registerEventListers();
