@@ -1,24 +1,25 @@
 export class Character {
-  static tvShow = "Game of Thrones";
+  static series = "Game of Thrones";
+
   name;
-  house;
+  family;
   age;
   alive;
-  comunicate;
-  constructor(name: string, house: string, age: number) {
+  warcry;
+
+  constructor(name: string, family: string, age: number) {
     this.name = name;
-    this.house = house;
+    this.family = family;
     this.age = age;
     this.alive = true;
-    this.comunicate = "";
+    this.warcry = "";
   }
 
-  endLife() {
+  toDie() {
     this.alive = false;
-    return this.alive;
   }
 
-  saySentence() {
-    return `${this.comunicate}`;
+  letWarCryOut() {
+    return this.warcry;
   }
 }

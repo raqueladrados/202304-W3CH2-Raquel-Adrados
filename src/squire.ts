@@ -1,18 +1,20 @@
-import { Character } from "./character.js";
+import { Character } from "./character.ts";
+import { Fighter } from "./fighter.ts";
 
 export class Squire extends Character {
-  knight;
+  support;
   pelotismo;
+  // eslint-disable-next-line max-params
   constructor(
     name: string,
-    house: string,
+    family: string,
     age: number,
-    knight: string,
+    support: Fighter,
     pelotismo: number
   ) {
-    super(name, house, age);
-    this.knight = knight;
+    super(name, family, age);
+    this.support = support;
     this.pelotismo = pelotismo;
-    this.comunicate = "I'm a loser";
+    this.warcry = "I'm a loser";
   }
 }

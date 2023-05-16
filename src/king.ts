@@ -1,10 +1,11 @@
-import { Character } from "./character.js";
+import { Character } from "./character.ts";
 
 export class King extends Character {
-  rulingYears;
-  constructor(name: string, house: string, age: number, rulingYears: number) {
-    super(name, house, age);
-    this.rulingYears = rulingYears;
-    this.comunicate = "You're all gonna die";
+  reignLength;
+  warcry;
+  constructor(name: string, family: string, age: number, reignLength: number) {
+    super(name, family, age);
+    this.reignLength = reignLength;
+    this.warcry = "You are all going to die!";
   }
 }

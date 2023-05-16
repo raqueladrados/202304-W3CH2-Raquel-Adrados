@@ -1,15 +1,18 @@
-import { Character } from "./character.js";
+import { Character } from "./character.ts";
+import { King } from "./king.ts";
+import { Fighter } from "./fighter.ts";
 
 export class Counselor extends Character {
-  characterAdvised;
+  support;
+  warcry;
   constructor(
     name: string,
-    house: string,
+    family: string,
     age: number,
-    characterAdvised: string
+    support: Fighter | King
   ) {
-    super(name, house, age);
-    this.characterAdvised = characterAdvised;
-    this.comunicate = "I think I'll be dying soon";
+    super(name, family, age);
+    this.support = support;
+    this.warcry = "I don't know why, but I think I will die soon";
   }
 }
