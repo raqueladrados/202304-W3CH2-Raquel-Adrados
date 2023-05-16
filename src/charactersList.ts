@@ -1,4 +1,3 @@
-import { Character } from "./character";
 import { King } from "./king";
 import { Counselor } from "./counselor";
 import { Squire } from "./squire";

@@ -5,7 +5,7 @@ import { Fighter } from "./fighter";
 
 export const kingTemplate = (object: King) => ` <li class="character col">
         <div class="card character__card">
-          <img src="img/${object.name}.jpg" alt="${object.name} ${object.family}" class="character__picture card-img-top" />
+          <img src="img/joffrey.jpg" alt="${object.name} ${object.family}" class="character__picture card-img-top" />
           <div class="card-body">
             <h2 class="character__name card-title h4">${object.name} ${object.family}</h2>
             <div class="character__info">
@@ -32,9 +32,9 @@ export const kingTemplate = (object: King) => ` <li class="character col">
         </div>
       </li>`;
 
-export const FighterTemplate = (object: Fighter) => ` <li class="character col">
+export const fighterTemplate = (object: Fighter) => ` <li class="character col">
         <div class="card character__card">
-          <img src="img/${object.name}.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
+          <img src="img/jaime.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
           <div class="card-body">
             <h2 class="character__name card-title h4">${object.name} ${object.family}</h2>
             <div class="character__info">
@@ -65,7 +65,7 @@ export const counselorTemplate = (
   object: Counselor
 ) => `<li class="character col">
         <div class="card character__card">
-          <img src="img/${object.name}.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
+          <img src="img/tyrion.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
           <div class="card-body">
             <h2 class="character__name card-title h4">${object.name} ${object.family}</h2>
             <div class="character__info">
@@ -94,7 +94,7 @@ export const counselorTemplate = (
 
 export const squireTemplate = (object: Squire) => `<li class="character col">
         <div class="card character__card">
-          <img src="img/${object.name}.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
+          <img src="img/bronn.jpg" alt="${object.name} ${object.family} del personaje" class="character__picture card-img-top" />
           <div class="card-body">
             <h2 class="character__name card-title h4">${object.name} ${object.family}</h2>
             <div class="character__info">
